@@ -21,3 +21,11 @@
 ```sh
 go get -u github.com/pitakill/rickandmortyapigowrapper
 ```
+
+## Запуск
+
+Для запуска приложения наберите в консоли:
+
+```sh
+go run main.go
+```
