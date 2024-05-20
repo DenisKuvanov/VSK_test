@@ -29,3 +29,10 @@ go get -u github.com/pitakill/rickandmortyapigowrapper
 ```sh
 go run main.go
 ```
+
+## Тестирование
+Для запуска тестов необходимо ввести команду:
+
+```sh
+go test ./tests
+```
