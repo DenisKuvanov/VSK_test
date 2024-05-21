@@ -1,7 +1,6 @@
-package tests
+package utils
 
 import (
-	"VSK_test/utils"
 	"testing"
 )
 
@@ -16,7 +15,7 @@ func TestGetIdFromUrl(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		result, err := utils.GetIdFromUrl(test.url)
+		result, err := GetIdFromUrl(test.url)
 		if err != nil {
 			t.Errorf("Unexpected error: %v", err)
 		}

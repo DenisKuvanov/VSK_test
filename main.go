@@ -1,8 +1,9 @@
 package main
 
 import (
-	"VSK_test/api"
-	"VSK_test/services"
+	"VSK_test/lib"
+	"VSK_test/lib/api"
+	"VSK_test/lib/services"
 	"fmt"
 	"time"
 )
@@ -10,8 +11,9 @@ import (
 func main() {
 	start := time.Now()
 
-	httpClient := api.NewHttpClient()
-	RickAndMortyService := services.NewRickAndMortyService(httpClient)
+	config := lib.LoadConfig()
+	httpClient := api.NewHttpClient(config.ClientConfig)
+	RickAndMortyService := services.NewRickAndMortyService(httpClient, config.ServiceConfig)
 	RickAndMortyService.Run()
 
 	duration := time.Since(start)

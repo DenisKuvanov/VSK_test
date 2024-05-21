@@ -34,5 +34,5 @@ go run main.go
 Для запуска тестов необходимо ввести команду:
 
 ```sh
-go test ./tests
+go test <folder_name_with_tests>
 ```
