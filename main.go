@@ -3,8 +3,8 @@ package main
 import (
 	"VSK_test/lib"
 	"VSK_test/lib/api"
+	"VSK_test/lib/log"
 	"VSK_test/lib/services"
-	"fmt"
 	"time"
 )
 
@@ -17,5 +17,5 @@ func main() {
 	RickAndMortyService.Run()
 
 	duration := time.Since(start)
-	fmt.Printf("Script took %s\n", duration)
+	log.Log.Infof("Script took %s\n", duration)
 }
