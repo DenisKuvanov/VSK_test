@@ -176,7 +176,7 @@ func (k *RickAndMortyService) Run() {
 			continue
 		}
 		fmt.Println(string(episodeJSON))
-		fmt.Println("\n#################################################################\n")
+		fmt.Println("\n#################################################################")
 	}
 	fmt.Println("Done!")
 	fmt.Printf("Length of episodes: %d\n", len(k.Episodes))
